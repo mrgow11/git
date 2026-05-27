@@ -4,8 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Git course</title>
+  <style>
+    .title{
+    position: relative;
+    width: fit-content;
+}
+
+.title::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 3px;
+
+    background: red;
+
+    transition: 0.5s;
+}
+
+.title:hover::after{
+
+    width: 100%;
+    transform: rotate(-8deg);
+}
+
+
+.title::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: -5px;
+
+    width: 0%;
+    height: 3px;
+
+    background: red;
+
+    transition: 0.5s;
+}
+
+.title:hover::before{
+
+    width: 100%;
+    transform: rotate(8deg);
+}
+  </style>
 </head>
 <body>
-  
+  <h1 class="title">
+    Dashboard
+</h1>
 </body>
 </html>
